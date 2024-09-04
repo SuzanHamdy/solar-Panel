@@ -789,9 +789,17 @@ padding:0   20px ;
         width: 90%;
         height: 300px;
     }
+    .values1 .values-card{
+        width: 70%;
+        height: 350px;
+        border: 1px solid #99e2b4;
+        padding: 0 20px 0;
+        border-radius: 20px;
+        background-color: #e2ebe5;
+    }
     .what{
         width: 100%;
-        height: 120vh;
+        height: 130vh;
         margin: 30px  auto;
         gap: 10px;
         padding: 20px;
@@ -801,7 +809,8 @@ padding:0   20px ;
         width: 80%;
         height: 35vh;
         padding: 20px;
-        margin: 80px  auto  ;
+        margin: 180px  auto 10px ;
+   
     }
     .what2{
         width: 90%;
@@ -870,6 +879,11 @@ padding:0   20px ;
 
 }
 @media (max-width :500px) {
+    .responsive{
+      
+        width: 250px;
+        height: 300px;
+    }
     header nav{
         width: 70%;
         margin-left: 4%;
@@ -895,7 +909,6 @@ padding:0   20px ;
         margin: 20px auto;
         gap: 5px;
     }
- 
     .power1{
         width: 400px;
         height: 350px;
@@ -905,7 +918,6 @@ padding:0   20px ;
         top: 50%;
         left: 50%;
         transform: translate( -50% ,-50%);
-      
         }
         .power1 h2{
             font-size: 30px;
@@ -916,7 +928,6 @@ padding:0   20px ;
              line-height: 25px;
              margin: 20px 0;
           }
-       
           .repairs1{
             width: 90%;
             height: 300px;
@@ -963,21 +974,21 @@ padding:0   20px ;
             border-radius: 20px;
             background-color: #e2ebe5;
         }   
-    .what{
-        width: 100%;
-        height: 130vh;
-        margin: 80px  auto;
-        gap: 10px;
-        padding: 20px;
-        flex-direction: column;  
-    }
-    .what1{
-        width: 80%;
-        height: 70vh;
-        padding: 20px;
-        margin: 80px  auto  ;
-    }
-
+        .what{
+            width: 100%;
+            height: 130vh;
+            margin-bottom: 50px;
+            gap: 10px;
+            padding: 5px;
+            flex-direction: column;  
+        }
+        .what1{
+            width: 80%;
+            height: 40vh;
+            padding: 5px;
+            margin: 120px  auto 30px ;
+         
+        }
     .what2{
         width: 90%;
         height: 70vh;
@@ -993,7 +1004,6 @@ padding:0   20px ;
     align-items: center;
         gap: 10px;
     }
- 
     .what2 p{
         margin-right: 10px;
         padding: 30px 10px 7px;
@@ -1018,27 +1028,92 @@ padding:0   20px ;
         margin-top: 70px;
     }
     .footer1{
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 30px;
+        font-size: 12px;
+        gap: 10px;
     }
-  
     .footer1 .about2 .input{
     width: 300px;
     height: 40px;
     border-radius: 20px;
     background-color: #1a3e6b;
     }
-
     .footer1 .about2 .input button{
         height: 45px;
         margin: 0;
     }
-    
+    .footer2{
+        gap: 10px;
+        font-size: 12px;
+    }
     .footerf p span{
         font-size: 15px;
     padding:0   10px ;
     }
- 
+}
+@media (max-width :350px) {
+        main .main{
+            width: 250px;
+            height: 60vh;
+            margin: 0px;
+            padding: 10px;
+        }
+        .friend{
+            width:100%;
+            height: 120vh;
+            margin: 3px auto;
+        }
+        .friend1 {
+            height: 50vh;
+        padding: 0  10px;
+        margin-top: 0;
+     
+        }
+        .friend1 h2{
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .friend1 p{
+            color: var(--footer);
+            font-size: 10px;
+            margin-right:30px ;
+            padding-right: 10px;  
+        }
+        .friend1 ol{
+            padding: 5px;
+            font-size: 13px;
+            list-style-type:none ;
+        }
+        .friend2{
+            width: 60%;
+        }
+        .power1{
+            width: 260px;
+            }
+            .values1 .values-card{
+                width: 90%;
+                height: 420px;
+                border: 1px solid #99e2b4;
+                padding: 0 20px 0;
+                border-radius: 20px;
+                background-color: #e2ebe5;
+            }  
+            .what{
+                width: 100%;
+                height: 130vh;
+                margin-bottom: 50px;
+                gap: 10px;
+                padding: 5px;
+                flex-direction: column;  
+            }
+            .what1{
+                width: 80%;
+                height: 40vh;
+                padding: 5px;
+                margin: 120px  auto 30px ;
+             
+            }
+            footer{ 
+                height: 70vh;
+             }
+       
 }
