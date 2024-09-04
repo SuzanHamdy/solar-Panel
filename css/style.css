@@ -1,0 +1,978 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg :#84a98c;
+    --color :#cad2c5 ;
+    --white :#52796f ;
+    --header :#2f3e46;
+    --body :#f2f4e5;
+    --footer : #354f52;
+    --btn :#bc6c25;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.space{
+    width: 100%;
+    height: 150px;
+}
+ ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+button{
+    transition: 1s;
+}
+button:hover{
+ transform: scale(0.9);
+}
+
+.flex{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+}
+@keyframes opacit {
+    0%{
+     opacity: 0;
+    }
+    100%{
+     opacity: 1;
+    }}
+                                                     /* start header */
+header{
+    background-color: var(--white);
+    transition: 0.8s;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    z-index: 10000;
+}
+header nav{
+width: 80%;
+height: 60px;
+margin:  auto;
+font-size: 20px;
+transition: 0.5s;
+}
+header ul li a img {
+border-radius: 10px;
+}
+header ul li  {
+    list-style: none;
+    margin: 0   10px;
+}
+#nav li a{
+    font-weight: bold;
+    transition: 0.5s;
+}
+#nav li a:focus{
+    font-weight: bold;
+    font-size: 22px;
+    color: #071425;
+    text-shadow: 1px 1px 1px #fefae0;
+    background-color: transparent;
+ box-shadow: 2px 2px 2px 2px #071425;
+ padding: 5px;
+ border-radius: 5px;
+}
+header nav .iii{
+    display: none;
+    padding: 7px;
+
+}
+header nav .iii:hover{
+    transform: scale(0.7); 
+}
+.responsive{
+    background-color: #1f2220;
+    color: #fff;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    z-index: 15000;
+padding: 20px;
+display: none;
+}
+.responsive div p.up{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+}
+.responsive div p{
+    margin:  8px;
+}
+.responsive div p a{
+text-decoration: none;
+padding: 5px;
+color: #fff;
+
+}
+.responsive div p  img {
+    border-radius: 50%;
+
+    }
+    .responsive div  #i i{
+        transition: 0.5s;
+        transform: scale(1.5); 
+        padding: 7px;
+    }
+    .responsive div  #i i:hover{
+   rotate:300deg;
+  transform: scale(1);
+
+    }
+/* ////////////////////////////////////////////////////////// */
+                                                /* end header */
+/* start main */
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/4.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+main .main{
+    width: 50%;
+    height: 100vh;
+    margin: 20px  150px;
+    padding: 10px 40px;
+    color: #fff;
+}
+main .main h1{
+    font-size: 50px;
+    line-height: 60px;
+}
+main .main p{
+    font-size: 20px;
+    line-height: 30px;
+    color: #ddd5d5;
+}
+ button{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 25px;
+    padding: 10px 20px;
+    color:#fff;
+}
+main .main .btn{
+    background-color:var(--white);
+}
+.btn1{
+    background-color:var(--btn);
+}
+/* end main */
+/* ////////////////////////////////////// */
+/*start friend */
+.friend{
+    width: 70%;
+    height: 90vh;
+    margin: 10px auto;
+    gap: 80px;
+}
+.friend1 {
+    height: 63vh;
+padding:0  30px;
+margin-top: 0;
+}
+.friend1 h2{
+    font-size: 45px;
+    font-weight: bold;
+}
+.friend1 p{
+    color: var(--footer);
+    font-size: 18px;
+}
+.friend1 ol{
+    padding: 20px;
+    font-size: 18px;
+    list-style-type:none ;
+}
+.friend1 ol li span{
+   color: var(--bg);                                         
+}
+.friend2{
+    position: relative;
+}
+.friend2 .yellow{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--btn);
+    position: absolute;
+    top: 220px;
+    left: -70px;
+    text-transform:capitalize;
+    text-align: center;
+}
+                                /*  end friend */
+                                /* start power */
+.power{
+    width: 100%;
+    height: 60vh;
+    background-image: url(../image/9.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+ .power1{
+width: 700px;
+height: 300px;
+padding: 20px ;
+color: #fff;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate( -80% ,-40%);
+}
+.power1 h2{
+  font-size: 40px;
+  line-height: 80px;
+}
+.power1 p{
+   font-size: 25px;
+   line-height: 30px;
+   margin: 20px 0;
+}
+                                /* end power*/
+                                /* start solar */
+.solar{
+    width: 100%;
+    height: 100vh;
+}
+.solar1{
+    width: 60%;
+    text-align: center;
+    margin: 40px  auto 20px;
+}
+.solar1 h2{
+    font-size: 35px;
+    line-height: 50px;
+}
+.solar1 p{
+    font-size: 17px;
+    color: #514e4e;
+}
+.solar2{
+    width: 80%;
+    margin: auto;
+}
+.solar2 .card{
+    padding: 20px;
+}
+.solar2 .card h3{
+    padding: 20px;
+}
+.solar2 .card p{
+    padding: 15px;
+}
+.solar2 .card span{
+    padding: 20px;
+    font-size: 20px;
+    color: var(--bg);
+}
+                                /* end solar */
+                                /* start repairs */
+.repairs{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../image/10.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.repairs1{
+    width: 40%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+left: 50%;
+transform: translate(-50% ,-50%);
+}
+                                            /* end repairs */
+                                            /* start energy */
+.energyenergy{
+    background-color:var(--body);
+}
+.energy{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    padding: 10px; 
+}
+.energy1{
+    width: 45%;
+    height: 70%;
+    padding: 20px;
+ flex-grow: 1;
+    margin-top: 0px;
+}
+.energy1  h3 {
+    width: 60px;
+    height: 50px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color:var(--white);
+    text-shadow: 3px 5px 5px var(--btn);
+}
+.energy1  .hh2{
+    font-size:30px ;
+    font-weight: bold;
+}
+.energy2{
+    display: grid;
+    grid-template-columns: auto  auto;
+    flex-grow: 4;
+ gap: 10px;
+    padding: 30px;
+    margin-top: 30px;
+}
+.energy2 .energy-card{
+    width: 350px;
+    height: 250px;
+    border: 1px solid #99e2b4;
+    padding: 30px;
+    border-radius: 20px;
+}
+.energy2 .energy-card h2{
+    font-size:17px;
+    line-height: 30px;
+    margin: 12px 0;
+}
+.energy2 .energy-card p{
+    font-size: 12px;
+}
+.energy2 .energy-card .img{
+    width: 230px;
+    height: 66px;
+position: relative;
+}
+.energy2 .energy-card .img .overlay{
+    height: 80%;
+    background-color: #99e2b4;
+    opacity: 0.4;
+    border-radius: 10px;
+}
+.energy2 .energy-card:nth-child(3){
+    height: 220px;
+}
+.energy2 .energy-card span{
+    color: var(--white);  
+}
+.energy2 .energy-card .h6{
+  text-decoration: underline;
+  font-weight: bold;
+}
+                                                    /* end energy */
+                                                    /* start values */
+.values{
+    width: 80%;
+    height: 80vh;
+    margin:70px auto;
+}
+.values h3{
+    font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.values .p{
+    text-align: center;
+    margin: 20px auto;
+    padding-bottom: 20px ;
+}
+.values1 .values-card{
+    width: 350px;
+    height: 400px;
+    border: 1px solid #99e2b4;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #e2ebe5;
+}
+.values1 .values-card h4{
+font-size: 28px;
+}
+    .values1 .values-card p{
+
+font-size: 18px;
+color: #3b3838;
+    }
+                                                /* end values */
+                                                /* start what */
+.what{
+    width: 80%;
+    height: 90vh;
+    margin: 30px  auto;
+    gap: 10px;
+    padding: 40px;  
+}
+.what1{
+    width: 40%;
+    height: 360px;
+    padding: 20px;
+}
+.what1 h2{
+font-size: 30px;
+text-transform: capitalize;
+margin: 20px 0px;
+}
+.what1 i{
+    font-size: 60px;
+    color: var(--white);  
+}
+.what1 p{
+font-size: 18px;
+}
+.what2{
+    width: 65%;
+    height: 300px;
+    padding: 20px;
+    background-color: #e2ebe5;
+    border-radius: 20px;
+    margin: 20px   3px;
+}
+.what2 .title h2{
+    color:var(--white);
+}
+.what2 .title ul {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+    gap: 15px;
+}
+.what2 .title ul li{
+    color: #a59e9e;
+}
+.what2 .title ul :first-child{
+    color: #000;
+}
+.what2 p{
+    margin-right: 200px;
+    padding: 10px ;
+    line-height: 25px;
+}
+.all .last i{
+    font-size: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 12px;
+    margin: 8px;
+}
+                                                /* end what */
+                                    /* start footer */
+ footer{
+    width: 100%;
+    height: 60vh;
+    background-color: #072140;
+ }
+footer .footer{
+    width: 80%;
+    padding: 30px;
+    margin: auto;
+    color: #fff;
+}
+.footer1 .about1 ul{
+list-style: none;
+justify-content: space-between;
+align-items: center;
+margin: 20px   5px;
+gap: 30px;
+}
+.footer1 .about2 .input{
+width: 300px;
+height: 40px;
+border-radius: 20px;
+background-color: #1a3e6b;
+}
+.footer1 .about2 .input input{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0 8px;
+ 
+}
+.footer1 .about2 .input button{
+    height: 45px;
+    margin: 0;
+}
+.footer2{
+    color: #a89e9e;
+}
+.footerf p span{
+    border-right: 1px solid #fff;
+padding:0   20px ;
+}
+                                             /* end footer */
+  /* ////////////////////////////////////////////////////////// */
+@media (max-width :1400px) {
+    main .main{
+        width: 400px;
+        height: 100vh;
+        margin: 20px;
+        padding: 10px;
+    }
+    button{
+        margin: 7px;
+    }
+  .friend{
+    width: 100%;
+    height: 80vh;
+    margin: 3px auto;
+    gap: 10px;
+}
+.power1{
+    width: 500px;
+    height: 500px;
+    padding: 20px ;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -80% ,-40%);
+    }
+    .solar2{
+        width: 100%;
+      display: grid;
+      grid-template-columns:35%  35% 35%;
+    }
+    .solar2 .card{
+        padding: 10px;
+        width: 80%;
+    }
+    .solar2 .card img{
+        width: 100%;
+    }
+    .solar2 .card h3{
+        padding: 3px;
+    }
+    .solar2 .card p{
+        padding: 3px;
+
+    }
+    .solar2 .card span{
+        padding: 3px;
+        font-size: 20px;
+      
+    }
+    .energy{
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        padding: 8px; 
+    }
+    .values{
+        width: 100%;
+        height: 80vh;
+        margin:40px auto;
+    }
+    .what{
+        width:100%;
+        height: 80vh;
+        margin:auto;
+        gap: 7px;
+        padding: 20px;  
+    }
+    .what2 p{
+        margin-right: 100px;
+        padding: 10px ;
+        line-height: 25px;
+    }
+    .all .last i{
+        font-size: 8px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        padding: 12px;
+        margin: 5px;
+    }
+}
+@media (max-width :900px) {
+    header nav ul{
+        display: none;
+        
+        }
+        header ul li a{
+            display: none;
+        } 
+        header nav .iii{
+            display: block;
+        }
+        main .main{
+            width: 700px;
+            height: 60vh;
+            margin: 70px;
+            padding: 10px 40px 20px  80px;
+          
+        }
+        .friend{
+            width: 70%;
+            height: 140vh;
+            margin: 3px auto;
+            gap: 5px;
+            flex-direction: column-reverse;
+        }
+        .power1{
+            width: 500px;
+            height: 350px;
+            padding: 10px ;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate( -60% ,-50%);
+            }
+            .solar2{
+                width: 100%;
+              display: grid;
+              grid-template-columns:35%  35% 35%;
+              gap: 5px;
+            }
+            .repairs1{
+                width: 40%;
+                height: 270px;
+            }
+            .energy{
+                width: 100%;
+                height: 170vh;
+                margin: auto;
+                padding: 10px;   
+            }
+            .energy2{
+                display: grid;
+                grid-template-columns: 40%  ;
+                flex-grow: 4;
+             gap: 5px;
+                padding: 10px ;
+                margin-top: 0px;
+            }
+            .energy2 .energy-card{
+                width: 350px;
+                height: 250px;
+                border: 1px solid #99e2b4;
+                padding: 30px;
+                border-radius: 20px;
+            }
+            .values{
+                width: 100%;
+                height: 140vh;
+                margin:10px auto;
+            }
+            .values1{
+                flex-direction: column;
+                gap: 10px;
+            }
+            .values1 .values-card{
+                width: 70%;
+                height: 300px;
+                border: 1px solid #99e2b4;
+                padding: 0 20px 0;
+                border-radius: 20px;
+                background-color: #e2ebe5;
+            }
+            .what1{
+                width: 30%;
+                height: 400px;
+                padding: 10px;
+            }
+            .what2{
+                width: 70%;
+                height: 350px;
+                padding: 20px;
+                background-color: #e2ebe5;
+                border-radius: 20px;
+                margin: 20px   3px;
+            }
+            footer{ 
+                height: 40vh;
+             }
+            footer .footer{
+                width: 100%;
+                height: 50vh;
+                padding: 10px;
+                margin: auto;
+                color: #fff;
+            }
+}
+@media (max-width :700px) {
+    main .main{
+        width: 500px;
+        height: 60vh;
+        margin: 20px;
+        padding: 10px 40px 20px  80px;
+    }
+    .friend{
+        width: 70%;
+        height: 120vh;
+        margin: 10px auto;
+        gap: 5px; 
+    }
+    .friend1 {
+        height: 50vh;
+    padding: 0  30px;
+    margin-top: 0;
+    }
+    .friend1 h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .friend1 p{
+        color: var(--footer);
+        font-size: 13px;
+    }
+    .friend1 ol{
+        padding: 5px;
+        font-size: 13px;
+        list-style-type:none ;
+    }
+    .solar{
+        width: 100%;
+        height: 180vh;
+    }
+    .solar2{
+        width: 100%;
+      display: grid;
+      grid-template-columns:auto;
+      gap: 15px;
+      margin: auto;
+    }
+    .solar2 .card{
+        width: 70%;
+        height: 45vh;
+        padding: 5px;
+        margin: 0;
+        margin: auto;
+    }
+    .solar2 .card img{
+        height: 25vh;
+    }
+    .solar2 .card h3{
+        padding: 5px;
+    }
+    .solar2 .card p{
+        padding: 5px;
+    }
+    .repairs1{
+        width: 90%;
+        height: 300px;
+    }
+    .what{
+        width: 100%;
+        height: 120vh;
+        margin: 30px  auto;
+        gap: 10px;
+        padding: 20px;
+        flex-direction: column;  
+    }
+    .what1{
+        width: 80%;
+        height: 28vh;
+        padding: 20px;
+        margin: 80px  auto  10px;
+    }
+    .what2{
+        width: 90%;
+        height: 60vh;
+        padding: 20px;
+        background-color: #e2ebe5;
+      
+        border-radius: 20px;
+        margin: 3px;
+    }
+  
+    .what2 .title ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+        gap: 10px;
+    }
+ 
+    .what2 p{
+        margin-right: 20px;
+        padding: 40px 10px 7px;
+        line-height: 25px;
+    }
+    .all .last i{
+        font-size: 20px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        padding: 12px;
+        margin: 8px;
+    }
+    footer{
+        width: 100%;
+        height: 80vh;
+        background-color: #072140;
+     }
+    footer .footer{
+        width: 100%;
+        padding: 30px 10px;
+    }
+    .footer1{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+  
+    .footer1 .about2 .input{
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #1a3e6b;
+    }
+
+    .footer1 .about2 .input button{
+        height: 45px;
+        margin: 0;
+    }
+    .footer2{
+        color: #a89e9e;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+}
+@media (max-width :500px) {
+
+    .friend{
+        width: 70%;
+        height: 120vh;
+        margin: 20px auto;
+        gap: 5px;
+    }
+ 
+    .power1{
+        width: 400px;
+        height: 350px;
+        padding: 10px ;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50% ,-50%);
+      
+        }
+        .power1 h2{
+            font-size: 30px;
+            line-height: 50px;
+          }
+          .power1 p{
+             font-size: 17px;
+             line-height: 25px;
+             margin: 20px 0;
+          }
+          .repairs1{
+            width: 90%;
+            height: 300px;
+        }
+        .energy{
+            flex-direction: column;
+            height: 190vh;
+        }
+        .energy1{
+            width: 80%;
+            height: 25%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .energy1  .hh2{
+            font-size:25px ;
+            font-weight: bold;
+        }
+        .energy2{
+            display: grid;
+            grid-template-columns: 40%  ;
+            flex-grow: 4;
+            gap: 5px;
+            padding: 10px ;
+            margin-top: 0px;
+        }
+        .energy2 .energy-card{
+            width: 350px;
+            height: 250px;
+            border: 1px solid #99e2b4;
+            padding: 30px;
+            border-radius: 20px;
+        }
+        .values{
+            width: 100%;
+            height: 160vh;
+            margin:40px auto;
+        }
+        .values1 .values-card{
+            width: 70%;
+            height: 350px;
+            border: 1px solid #99e2b4;
+            padding: 0 20px 0;
+            border-radius: 20px;
+            background-color: #e2ebe5;
+        }   
+    .what{
+        width: 100%;
+        height: 120vh;
+        margin: 30px  auto;
+        gap: 10px;
+        padding: 20px;
+        flex-direction: column;  
+    }
+    .what1{
+        width: 80%;
+        height: 28vh;
+        padding: 20px;
+        margin: 80px  auto  10px;
+    }
+    .what2 .title ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+        gap: 10px;
+    }
+ 
+    .what2 p{
+        margin-right: 20px;
+        padding: 40px 10px 7px;
+        line-height: 25px;
+    }
+    .all .last i{
+        font-size: 18px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        padding: 8px;
+        margin: 3px;
+    }
+    .footerf p span{
+        font-size: 15px;
+    padding:0   10px ;
+    }
+ 
+}
